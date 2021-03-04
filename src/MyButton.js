@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
-import { View, Text,StyleSheet,Alert,TouchableOpacity } from 'react-native'
+import { View, Text,StyleSheet,TouchableOpacity } from 'react-native'
 
 export default function MyButton(props) {
     return (
@@ -13,7 +13,7 @@ export default function MyButton(props) {
 }
 const styles= StyleSheet.create({
     button:{
-        backgroundColor:'#9fa8da',
+        backgroundColor:'grey',
         margin:5,
         padding:5,
         alignItems:'center',
@@ -22,7 +22,7 @@ const styles= StyleSheet.create({
     },
     title:{
         fontWeight:'bold',
-        color:'black',
+        color:'white',
        },
 
 })
