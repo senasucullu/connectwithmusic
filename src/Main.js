@@ -1,12 +1,16 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
-import { View,StyleSheet,Alert,} from 'react-native'
-import MyButton from './MyButton'
-import Input from './Input'
+import { View,StyleSheet,Alert,Image,} from 'react-native'
+import {MyButton,Input} from './components'
 
 export default function Main() {
     return (
         <View style={styles.container}>
+           <View style={styles.lala}>
+             <Image source={require('./image/music.png')} /> 
+           </View>
+            
+           
             <Input myplaceholder='E-mailinizi giriniz..' />
             <Input myplaceholder='Şifrenizi giriniz..' />
 
@@ -25,6 +29,10 @@ const styles = StyleSheet.create({
         flex:1,
         alignItems:'center',
         justifyContent:'center',
+        
+    },
+    lala:{
+        
         
     }
 
