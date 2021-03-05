@@ -2,7 +2,7 @@
 import React from 'react'
 import { View, Text,StyleSheet,TouchableOpacity } from 'react-native'
 
-export default function MyButton(props) {
+export function MyButton(props) {
     return (
         <View>
            <TouchableOpacity style={styles.button} onPress={(props.onSumbit)}>

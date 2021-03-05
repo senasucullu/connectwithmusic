@@ -2,7 +2,7 @@
 import React from 'react'
 import {View,TextInput,StyleSheet, TouchableOpacity} from 'react-native'
 
-export default function Input(props) {
+export function Input(props) {
     return (
         <View>
            <TouchableOpacity>
