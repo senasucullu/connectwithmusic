@@ -1,3 +1,4 @@
+/* eslint-disable semi */
 /* eslint-disable prettier/prettier */
 import React from 'react'
 import { View, Text,StyleSheet,TouchableOpacity } from 'react-native'
@@ -6,8 +7,9 @@ export function MyButton(props) {
     return (
         <View>
            <TouchableOpacity style={styles.button} onPress={(props.onSumbit)}>
-                <Text style={styles.title}>{props.mytitle}</Text>
+                <Text style={styles.title}> {props.mytitle}</Text>
             </TouchableOpacity>
+        
         </View>
     )
 }
@@ -19,6 +21,7 @@ const styles= StyleSheet.create({
         alignItems:'center',
         borderRadius:10,
         justifyContent:'center',
+        width:200,
     },
     title:{
         fontWeight:'bold',

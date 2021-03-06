@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
-import { View,StyleSheet,Alert,Image,} from 'react-native'
+import { View,StyleSheet,Alert,Image} from 'react-native'
 import {MyButton,Input} from './components'
 
 export default function Main() {
@@ -9,17 +9,19 @@ export default function Main() {
            <View style={styles.lala}>
              <Image source={require('./image/music.png')} /> 
            </View>
-            
            
             <Input myplaceholder='E-mailinizi giriniz..' />
+            
             <Input myplaceholder='Şifrenizi giriniz..' />
-
-            <MyButton
+             
+             <MyButton
             mytitle='Giriş Yap' 
             onSumbit={()=> Alert.alert('Giriş Yapılıyor...')}/>
             <MyButton 
             mytitle='Kayıt Ol' 
             onSumbit={()=> Alert.alert('Kayıt Olundu!')}/>
+            
+       
         </View>
     )
 }
@@ -33,7 +35,6 @@ const styles = StyleSheet.create({
     },
     lala:{
         
-        
-    }
+    },
 
 })
